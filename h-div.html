@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
     <title>サンプルページ</title>
     <style>
+        @font-face {
+            font-family: "Honoka";
+            src: url("./fonts/Honoka_Shin_Mincho_L.ttf") format('truetype');
+        }
+
         /* ページ全体のスタイル */
         body {
             font-family: 'Arial', sans-serif;
@@ -17,6 +25,7 @@
             background:#fff;
             color: #000;
             padding: 10px 20px;
+            font-family: "Yuji Mai", serif;
         }
         header nav {
             display: flex;
@@ -47,7 +56,7 @@
 
         /* 左側テキスト部分 */
         .text-section {
-            flex: 1; /* 左右のバランス調整 */
+            flex: initial; /* 左右のバランス調整 */
             padding: 40px;
             background-color: #f9f9f9; /* 背景色 */
         }
@@ -61,6 +70,10 @@
             margin: 10px 0;
             font-size: 1.2rem;
             line-height: 1.6;
+        }
+        .text-section a{
+            Text-decoration: none;
+            color: #008;
         }
 
         /* 右側画像部分 */
@@ -196,17 +209,18 @@
         
     </style>
 </head>
+<header>
+    <h1>サラダバーと<br>具沢山野菜スープのお店</h1>
+</header>
 <body>
-    <header>
-        <h1>サラダバーと<br>具沢山野菜スープのお店</h1>
-    </header>
     <div class="container">
         <!-- 左側テキスト -->
         <div class="text-section">
-            <p>わったーサラダバーって何？</p>
-            <p>美味しいお弁当の定期販売</p>
-            <p>会社概要</p>
-
+            <a href="#about">わったーサラダバーって何？</a><br>
+            <a href="#activity">活動内容</a><br>
+            <a href="#sell">弁当販売</a><br>
+            <a href="#contact"> お問い合わせ</a><br>
+            <a href="#support">協賛</a>
         <ul class="snsbtniti">
       
                 <li>
@@ -231,6 +245,58 @@
             <div class="overlay-text">再び沖縄を<br>「野菜王国」に！</div>
         </div>
     </div>
+    <section id="about">
+        <h2>わったーサラダバーって何？</h2>
+        <p>
+            この新規事業は、○○業界の課題を解決するために開発されました。
+            顧客に新たな価値を提供し、持続可能な未来を目指します。
+        </p>
+    </section>
+
+    <section id="sell">
+        <h2>弁当販売</h2>
+        <p>おいしい弁当盛りだくさん</p>
+
+        <h3>弁当1</h3>
+        <img src="bento1.png" alt="弁当1" title="弁当1">
+        <p>弁当1だよ！</p>
+
+        <h3>弁当2</h3>
+        <img src="bento2.png" alt="弁当2" title="弁当2">
+        <p>弁当2だよ！</p>
+
+        <h3>弁当3</h3>
+        <img src="bento3.png" alt="弁当3" title="弁当3">
+        <p>弁当3だよ！</p>
+
+        <p>メニュー開発担当：平良</p>
+    </section>
+
+    <section id="activity">
+        <h2>活動内容</h2>
+        <p>
+            この新規事業は、○○業界の課題を解決するために開発されました。
+            顧客に新たな価値を提供し、持続可能な未来を目指します。
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <p>
+            お問い合わせ先：kariicurry08(at)gmail.com<br>
+            ※(at)は@に置き換えてください
+            <br>
+            担当：直榮城
+        </p>
+    </section>
+
+    <section id="support">
+        <h2>協賛</h2>
+        <p>
+            <br>
+            
+        </p>
+    </section>
 </body>
 
 <footer>
